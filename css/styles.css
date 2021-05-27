@@ -16,7 +16,6 @@ h2 {
   padding: 30px;
   background-image: radial-gradient(circle farthest-corner at 10% 20%, #93e6f1 0%, #91c0f1 45.5%);
   color: navy; 
-  height: 230px;
 }
 
 .site-footer {
@@ -24,8 +23,7 @@ h2 {
   color: navy; 
   margin-bottom: 0;
   padding-top: 20px;
-  padding-bottom: 20px;
-  height: 220px;
+  padding-bottom: 10px;
 }
 
 .navbar {
@@ -122,3 +120,9 @@ margin-bottom: 50px;}
   margin-bottom: 50px;
 }
 
+.logo {
+text-decoration-line: none;
+text-decoration: none;
+color: navy;
+
+}
