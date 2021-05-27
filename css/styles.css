@@ -1,21 +1,27 @@
 body {
-  font-family: "Georgia", serif; }
+  font-family: "Georgia", serif; 
+  margin: 0px !important;
+  padding: 0px !important;
+}
 
 h1, h2, h3 {
   font-family: "Georgia", serif; }
 
 h2 {
-  color: lime; }
+  color: navy; }
 
 .jumbotron {
   margin-bottom: 0;
+  margin-top: 0;
   padding: 30px;
   background-image: radial-gradient(circle farthest-corner at 10% 20%, #93e6f1 0%, #91c0f1 45.5%);
   color: navy; }
 
 .site-footer {
   background-image: radial-gradient(circle farthest-corner at 10% 20%, #93e6f1 0%, #91c0f1 45.5%);
-  color: navy; }
+  color: navy; 
+  margin-bottom: 0;
+}
 
 .navbar {
   background-color: navy;
@@ -25,7 +31,9 @@ h2 {
 
 header p {
   color: white;
-  font-size: x-large; }
+  font-size: x-large;
+  padding-top: 0;
+}
 
 .btn-social-icon {
   color: white;
@@ -47,16 +55,20 @@ h2 {
   background-color: rgba(0, 0, 0, 0.5); }
 
 .carousel {
-  border: solid navy; }
+  border: solid navy; 
+margin-bottom: 50px;}
 
 .copyRightLink {
-  color: white; }
+  color: white; 
+}
 
 #carouselButton {
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: 100; }
+  z-index: 100; 
+  margin-bottom: 25px;
+}
 
 .btn-lg {
   background-color: orchid; }
@@ -87,3 +99,20 @@ h2 {
 
 .btn-youtube {
   color: white; }
+
+  #xButton {
+    color: white;
+  }
+
+#accordion {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.primary-text {
+  color: navy;
+}
+
+.homeCarousel {
+  margin-bottom: 50px;
+}

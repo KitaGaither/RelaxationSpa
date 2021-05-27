@@ -20,74 +20,203 @@
     <h1>Relaxation Spa</h1>
     <h6>SPIRIT | MIND | BODY</h6>
     <p class="text-center">Learn More About Our Mission!</p>
-  </header>
-
-  <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
-      <span class="navbar-toggler-icon"></span>
+  <!-- Book Button -->
+  <div class="text-right">
+    <button type="button" class="btn">
+      <a id="reserveButton" role="button" class="btn btn-lg text-white text-nowrap">Book Here</a>
     </button>
+  </div>
+</header>
+<!-- This is my Book A Massage button modal -->
+<div id="reserveModal" class="modal fade" role="dialog">
+<div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 class="modal-title text-white">Book Massage Below</h3>
+      <button id="xButton" type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="container-fluid">
+        <form>
+          <div class="row form-group">
+            <label class="col-sm-6 col-form-label" for="relaxationSpa">Length of Massage</label>
+<!-- This is the dropdown-->
+            <div class="col-sm-6">
+              <select class="form-control" name="relaxationSpa" id="relaxationSpa">
+                <option value="">Select...</option>
+                <option value="1">30mn. Massage</option>
+                <option value="2">1hr. Massage</option>
+                <option value="3">2hr. Massage</option>
+              </select>
+            </div>
+          </div>
+<!-- This is the date on my card-->
+          <div class="row form-group">
+            <label class="col-sm-6 col-form-label" for="date">Date</label>
+            <div class="col-sm-6">
+              <input class="form-control" type="date" name="date" id="date" placeholder="date">
+            </div>
+          </div>
+<!-- These are my Tent/RV buttons -->
+          <div class="form-group row">
+            <label class="col-sm-6 col-form-label">Massage Type</label>
+            <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+​
+              <label id="singleButton" class="btn active">
+                <input type="radio" name="personType" id="singlePerson" checked value="single"> Single
+              </label>
+​
+              <label class="btn btn-primary">
+                <input type="radio" name="personType" id="coupleButton" value="couple"> Couple
+              </label>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <button id="cancelButton" class="btn" data-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm navbar-dark sticky-top ml-auto">
+  <div class="container">
+  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="nucampNavbar">
     <ul class="navbar-nav">
       <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
       <li class="nav-item active"><a class="nav-link" href="#">About</a></li>
       <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
       <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
     </ul>
+  </div>
+</div>
   </nav>
-
+<!-- Our Mission text -->
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <h2>Our Mission!</h2>
-        <hr>
+        <h2 class="text-center">Learn More About Our Mission!</h2>
+      </div>
+    </div>
+  </div>
+  <!-- This is my Accordion -->
+<div id="accordion">
+  <div class="card">
+    <div role="tab" class="card-header">
+        <h4>
+            <a class="collapsed primary-text" data-toggle="collapse" data-target="#gotStarted">
+                Find out how we got started!
+            </a>
+        </h4>
+        <div class="collapse" id="gotStarted" data-parent="#accordion">
+            <div class="card-body">
+                <p class="d-none d-sm-block primary-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, dignissimos perferendis. Quae, eos! At inventore nam provident! Repellendus, et obcaecati fuga expedita quisquam labore cumque laboriosam temporibus, ratione illum reprehenderit!</p>
+           </div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div role="tab" class="card-header">
+        <h4>
+            <a class="collapsed primary-text" data-toggle="collapse" data-target="#ourPlan">
+                Our plan to change the world
+            </a>
+        </h4>
+        <div class="collapse" id="ourPlan" data-parent="#accordion">
+            <div class="card-body">
+                <p class="d-none d-sm-block primary-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum quidem repellat assumenda sapiente quod minus vel libero perferendis, omnis a ea quae minima. Nesciunt, aut voluptates. Natus, dolorum deserunt.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div role="tab" class="card-header">
+        <h4>
+            <a class="collapsed primary-text" data-toggle="collapse" data-target="#youHelp">
+                How you can help
+            </a>
+        </h4>
+        <div class="collapse" id="youHelp" data-parent="#accordion">
+            <div class="card-body">
+                <p class="d-none d-sm-block primary-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eveniet ad impedit, voluptatum dolore dignissimos, accusamus repudiandae dicta, molestiae ducimus voluptate omnis voluptatibus aut iusto quibusdam alias. Velit, vel sint.</p>
+            </div>
+        </div>
+    </div>
+</div> 
+</div>
+  <!-- Carousel -->
+  <div class="container">
+    <div class="row row-content">
+      <div class="col">
+        <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Carousel Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#homeCarousel" data-slide-to="1"></li>
+            <li data-target="#homeCarousel" data-slide-to="2"></li>
+          </ol>
+          <!-- Carousel Images and captions-->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block img-fluid width: 100% height: auto"
+                src="images/water-lily.jpg" alt="Pink water-lilly" />
+              <div class="carousel-caption">
+                <h3>MIND</h3>
+                <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla earum rem,
+                  culpa vero eius animi nobis? Explicabo eveniet doloribus dolorum voluptates officiis quidem dolorem
+                  soluta, hic a ea, rem error.</p>
+              </div>
+            </div>
+​
+            <div class="carousel-item">
+              <img class="d-block img-fluid max-width: 100% height: auto"
+                src="images/buddha.jpg" alt="Blue Buddha" />
+              <div class="carousel-caption">
+                <h3>SPIRIT</h3>
+                <p class="d-none d-sm-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolores,
+                  illo iusto dolor alias eos, tenetur est veniam totam nesciunt suscipit et reprehenderit rem similique.
+                  Fuga magni eum suscipit ad.</p>
+              </div>
+            </div>
+​
+            <div class="carousel-item">
+              <img class="d-block img-fluid max-width: 100% height: auto"
+                src="images/pretty-rocks.jpg" alt="Pillar of balanced rocks" />
+              <div class="carousel-caption">
+                <h3>BODY</h3>
+                <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa doloribus,
+                  natus sapiente iusto perferendis voluptatibus. Inventore excepturi ad, vero reiciendis perspiciatis
+                  odit commodi delectus esse aliquid at in sed! Exercitationem!</p>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel Indicators -->
+          <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="container">
+<!-- This is my footer -->
+<footer class="site-footer">
+  <div class="container container-fluid">
     <div class="row">
-      <div class="col-sm-12">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque distinctio nam molestiae reprehenderit
-          odio architecto consequatur ut voluptas dolor! Voluptates tenetur explicabo laboriosam vitae rem mollitia
-          totam iusto quasi!</p>
-        <hr>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque distinctio nam molestiae reprehenderit
-          odio architecto consequatur ut voluptas dolor! Voluptates tenetur explicabo laboriosam vitae rem mollitia
-          totam iusto quasi!</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque distinctio nam molestiae reprehenderit
-          odio architecto consequatur ut voluptas dolor! Voluptates tenetur explicabo laboriosam vitae rem mollitia
-          totam iusto quasi!</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque distinctio nam molestiae reprehenderit
-          odio architecto consequatur ut voluptas dolor! Voluptates tenetur explicabo laboriosam vitae rem mollitia
-          totam iusto quasi!</p>
-      </div>
-    </div>
-  </div>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-4 col-sm-2 offset-1">
+      <div class="col-xs-12 col-sm-4 text-center">
           <h5>Links</h5>
           <ul class="list-unstyled">
             <li><a href="index.html">Home</a></li>
@@ -96,17 +225,16 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
-        <div class="col-6 col-sm-5 text-center">
+        <div class="col-xs-12 col-sm-4 text-center">
           <h5>Social</h5>
           <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
           <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
           <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-          <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
         </div>
-        <div class="col-sm-4 text-center">
+        <div class="col-xs-12 col-sm-4 text-center">
           <h5>Contact</h5>
-          <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
-            1-615-555-1234</a><br />
+          <a role="button" class="btn btn-link" href="tel:+1800relax"><i class="fa fa-phone"></i>
+            1-800-relaxspa</a><br />
           <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i>
             contact@relaxspa.co</a>
         </div>
